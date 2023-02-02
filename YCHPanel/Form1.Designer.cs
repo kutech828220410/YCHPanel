@@ -62,6 +62,9 @@
             this.radioButton_Drawer_綠 = new System.Windows.Forms.RadioButton();
             this.radioButton_Drawer_黃 = new System.Windows.Forms.RadioButton();
             this.radioButton_Drawer_白 = new System.Windows.Forms.RadioButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_V_Line_index)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_H_Line_index)).BeginInit();
@@ -221,7 +224,7 @@
             // 
             // button_Drawer_Clear
             // 
-            this.button_Drawer_Clear.Location = new System.Drawing.Point(318, 179);
+            this.button_Drawer_Clear.Location = new System.Drawing.Point(446, 12);
             this.button_Drawer_Clear.Name = "button_Drawer_Clear";
             this.button_Drawer_Clear.Size = new System.Drawing.Size(98, 35);
             this.button_Drawer_Clear.TabIndex = 8;
@@ -251,26 +254,23 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.radioButton_Drawer_白);
-            this.panel2.Controls.Add(this.radioButton_Drawer_黃);
-            this.panel2.Controls.Add(this.radioButton_Drawer_綠);
-            this.panel2.Controls.Add(this.radioButton_Drawer_藍);
-            this.panel2.Controls.Add(this.radioButton_Drawer_紅);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.button_Drawer_Clear);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.numericUpDown_V_Line_index);
             this.panel2.Controls.Add(this.button_V_Line_Show);
             this.panel2.Controls.Add(this.numericUpDown_H_Line_index);
             this.panel2.Controls.Add(this.button_H_Line_Show);
-            this.panel2.Location = new System.Drawing.Point(12, 53);
+            this.panel2.Location = new System.Drawing.Point(12, 83);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(428, 224);
+            this.panel2.Size = new System.Drawing.Size(532, 839);
             this.panel2.TabIndex = 11;
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.button_Drawer_ShowBox);
             this.panel3.Controls.Add(this.numericUpDown_Drawer_Height);
             this.panel3.Controls.Add(this.numericUpDown_Drawer_Width);
@@ -282,9 +282,9 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.numericUpDown_Drawer_PointX);
-            this.panel3.Location = new System.Drawing.Point(9, 84);
+            this.panel3.Location = new System.Drawing.Point(550, 83);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(303, 135);
+            this.panel3.Size = new System.Drawing.Size(691, 564);
             this.panel3.TabIndex = 11;
             // 
             // label6
@@ -432,9 +432,10 @@
             // 
             this.radioButton_Drawer_紅.AutoSize = true;
             this.radioButton_Drawer_紅.Checked = true;
-            this.radioButton_Drawer_紅.Location = new System.Drawing.Point(327, 12);
+            this.radioButton_Drawer_紅.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton_Drawer_紅.Location = new System.Drawing.Point(12, 53);
             this.radioButton_Drawer_紅.Name = "radioButton_Drawer_紅";
-            this.radioButton_Drawer_紅.Size = new System.Drawing.Size(35, 16);
+            this.radioButton_Drawer_紅.Size = new System.Drawing.Size(43, 24);
             this.radioButton_Drawer_紅.TabIndex = 12;
             this.radioButton_Drawer_紅.TabStop = true;
             this.radioButton_Drawer_紅.Text = "紅";
@@ -443,9 +444,10 @@
             // radioButton_Drawer_藍
             // 
             this.radioButton_Drawer_藍.AutoSize = true;
-            this.radioButton_Drawer_藍.Location = new System.Drawing.Point(327, 33);
+            this.radioButton_Drawer_藍.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton_Drawer_藍.Location = new System.Drawing.Point(51, 53);
             this.radioButton_Drawer_藍.Name = "radioButton_Drawer_藍";
-            this.radioButton_Drawer_藍.Size = new System.Drawing.Size(35, 16);
+            this.radioButton_Drawer_藍.Size = new System.Drawing.Size(43, 24);
             this.radioButton_Drawer_藍.TabIndex = 13;
             this.radioButton_Drawer_藍.Text = "藍";
             this.radioButton_Drawer_藍.UseVisualStyleBackColor = true;
@@ -453,9 +455,10 @@
             // radioButton_Drawer_綠
             // 
             this.radioButton_Drawer_綠.AutoSize = true;
-            this.radioButton_Drawer_綠.Location = new System.Drawing.Point(327, 54);
+            this.radioButton_Drawer_綠.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton_Drawer_綠.Location = new System.Drawing.Point(100, 53);
             this.radioButton_Drawer_綠.Name = "radioButton_Drawer_綠";
-            this.radioButton_Drawer_綠.Size = new System.Drawing.Size(35, 16);
+            this.radioButton_Drawer_綠.Size = new System.Drawing.Size(43, 24);
             this.radioButton_Drawer_綠.TabIndex = 14;
             this.radioButton_Drawer_綠.Text = "綠";
             this.radioButton_Drawer_綠.UseVisualStyleBackColor = true;
@@ -463,9 +466,10 @@
             // radioButton_Drawer_黃
             // 
             this.radioButton_Drawer_黃.AutoSize = true;
-            this.radioButton_Drawer_黃.Location = new System.Drawing.Point(327, 75);
+            this.radioButton_Drawer_黃.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton_Drawer_黃.Location = new System.Drawing.Point(149, 53);
             this.radioButton_Drawer_黃.Name = "radioButton_Drawer_黃";
-            this.radioButton_Drawer_黃.Size = new System.Drawing.Size(35, 16);
+            this.radioButton_Drawer_黃.Size = new System.Drawing.Size(43, 24);
             this.radioButton_Drawer_黃.TabIndex = 15;
             this.radioButton_Drawer_黃.Text = "黃";
             this.radioButton_Drawer_黃.UseVisualStyleBackColor = true;
@@ -473,23 +477,62 @@
             // radioButton_Drawer_白
             // 
             this.radioButton_Drawer_白.AutoSize = true;
-            this.radioButton_Drawer_白.Location = new System.Drawing.Point(327, 96);
+            this.radioButton_Drawer_白.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioButton_Drawer_白.Location = new System.Drawing.Point(198, 53);
             this.radioButton_Drawer_白.Name = "radioButton_Drawer_白";
-            this.radioButton_Drawer_白.Size = new System.Drawing.Size(35, 16);
+            this.radioButton_Drawer_白.Size = new System.Drawing.Size(43, 24);
             this.radioButton_Drawer_白.TabIndex = 16;
             this.radioButton_Drawer_白.Text = "白";
             this.radioButton_Drawer_白.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::YCHPanel.Properties.Resources.H;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 91);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(530, 373);
+            this.panel5.TabIndex = 12;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::YCHPanel.Properties.Resources.V;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 464);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(530, 373);
+            this.panel4.TabIndex = 11;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::YCHPanel.Properties.Resources.座標;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 153);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(689, 409);
+            this.panel6.TabIndex = 21;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 579);
+            this.ClientSize = new System.Drawing.Size(1253, 956);
+            this.Controls.Add(this.radioButton_Drawer_白);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.radioButton_Drawer_黃);
             this.Controls.Add(this.button_ConnectTest);
+            this.Controls.Add(this.radioButton_Drawer_綠);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.radioButton_Drawer_藍);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.radioButton_Drawer_紅);
+            this.Controls.Add(this.button_Drawer_Clear);
             this.Name = "Form1";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TestForm";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -505,6 +548,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_Width)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_Height)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -544,6 +588,9 @@
         private System.Windows.Forms.RadioButton radioButton_Drawer_綠;
         private System.Windows.Forms.RadioButton radioButton_Drawer_藍;
         private System.Windows.Forms.RadioButton radioButton_Drawer_紅;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel6;
     }
 }
 
