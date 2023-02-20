@@ -61,8 +61,14 @@ namespace YCHPanel
             this.button_H_Line_Show.Click += Button_H_Line_Show_Click;
             this.button_Drawer_Clear.Click += Button_Drawer_Clear_Click;
             this.button_Drawer_ShowBox.Click += Button_Drawer_ShowBox_Click;
+            this.button_Drawer_ShowPanel.Click += Button_Drawer_ShowPanel_Click;
+
+            this.button_RowLED_ShowLED.Click += Button_RowLED_ShowLED_Click;
+            this.button_RowLED_Clear.Click += Button_RowLED_Clear_Click;
         }
-  
+
+     
+
         private void Button_ConnectTest_Click(object sender, EventArgs e)
         {
             //檢查IP字串是否正確
@@ -113,5 +119,30 @@ namespace YCHPanel
             bytes.Set_LEDBytes_UDP(IP);
         }
 
+        private void Button_Drawer_ShowPanel_Click(object sender, EventArgs e)
+        {
+            //取得空LED陣列
+            byte[] bytes = YCHPanellib.Drawer.Get_Empty_LEDBytes();
+            //設定抽屜前板亮燈至LED陣列
+            bytes.Set_Drawer_Panel_Leds( color);
+            //上傳LED陣列至指定IP設備
+            bytes.Set_LEDBytes_UDP(IP);
+        }
+
+
+        private void Button_RowLED_ShowLED_Click(object sender, EventArgs e)
+        {
+            //取得空LED陣列
+            byte[] bytes = YCHPanellib.RowLED.Get_Empty_LEDBytes();
+            //設定抽屜前板亮燈至LED陣列
+            bytes.Get_Rows_LEDBytes((int)numericUpDown_RowLED_StartNum.Value , (int)numericUpDown_RowLED_EndNum.Value ,color);
+            //上傳LED陣列至指定IP設備
+            bytes.Set_RowLEDBytes_UDP(IP);
+        }
+        private void Button_RowLED_Clear_Click(object sender, EventArgs e)
+        {
+            //清除指定IP設備所有亮燈
+            YCHPanellib.RowLED.Set_Clear_UDP(IP);
+        }
     }
 }

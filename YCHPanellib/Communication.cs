@@ -35,7 +35,7 @@ namespace YCHPanellib
         static public int UDP_RetryNum = 5;
         static public readonly int Image_Buffer_SIZE = 1200;
         static public ChipType Chip_Type = ChipType.BW16;
-        //static public int EPD583_frameDIV = 10;
+
         public enum enum_LED_Type : int
         {
             WHITE, RED, BLUE, YELLOW, WARM_WHITE
@@ -44,22 +44,16 @@ namespace YCHPanellib
         {
             WS2812_Blink = (byte)'5',
 
-            Set_UDP_SendTime = (byte)'F',
-      
+            Set_UDP_SendTime = (byte)'F',      
             Set_ServerConfig = (byte)'H',
             Set_JsonStringSend = (byte)'I',
 
             Set_WS2812_Buffer = (byte)'L',
             Set_GetewayConfig = (byte)'M',
             Set_LocalPort = (byte)'N',
-            Get_WS2812_Buffer = (byte)'O',
-
-
-              
+            Get_WS2812_Buffer = (byte)'O',              
         }
-  
-
-   
+       
         static public bool Set_WS2812_Blink(UDP_Class uDP_Class, string IP, int blinkTime, Color color)
         {
             return Command_WS2812_Blink(uDP_Class, IP, blinkTime, color);
@@ -83,8 +77,16 @@ namespace YCHPanellib
         static public bool Set_LocalPort(UDP_Class uDP_Class, string IP, int LocalPort)
         {
             return Command_Set_LocalPort(uDP_Class, IP, LocalPort);
+        }     
+        static public bool Set_Rows_LED_UDP(UDP_Class uDP_Class, string IP, byte[] LED_Bytes)
+        {
+            if (uDP_Class != null)
+            {
+                return Communication.Set_WS2812_Buffer(uDP_Class, IP, 0, LED_Bytes);
+            }
+            return false;
         }
-      
+
         static private bool Command_WS2812_Blink(UDP_Class uDP_Class, string IP, int blinkTime, Color color)
         {
             bool flag_OK = true;
@@ -219,7 +221,6 @@ namespace YCHPanellib
             if (ConsoleWrite) Console.WriteLine($"{IP}:{uDP_Class.Port} : Set UDP SendTime {string.Format(flag_OK ? "sucess" : "failed")}!");
             return flag_OK;
         }
-    
         static private bool Command_Set_ServerConfig(UDP_Class uDP_Class, string IP, string ServerIP ,int ServerPort)
         {
             bool flag_OK = true;
@@ -358,8 +359,7 @@ namespace YCHPanellib
             }
             if (ConsoleWrite) Console.WriteLine($"{IP}:{uDP_Class.Port} : Set JsonStringSend {string.Format(flag_OK ? "sucess" : "failed")}!");
             return flag_OK;
-        }
-      
+        }   
         static private bool Command_Set_WS2812_Buffer(UDP_Class uDP_Class, string IP, int start_ptr, byte[] bytes_RGB)
         {
             bool flag_OK = true;
@@ -633,8 +633,6 @@ namespace YCHPanellib
             return flag_OK;
         }
        
-
-
         #region UART
         static private int UART_TimeOut = 1000;
         static private int UART_RetryNum = 3;
@@ -1764,8 +1762,7 @@ namespace YCHPanellib
             return false;
         }
         #endregion
-
-      
+   
         static private byte[] IP2Bytes(string IP)
         {
             byte[] bytes = new byte[4];

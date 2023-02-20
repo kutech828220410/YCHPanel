@@ -36,13 +36,13 @@ namespace YCHPanellib
         static int ServerPort = 30005;
         static private UDP_Class uDP_Class = new UDP_Class("0.0.0.0", LocalPort);
 
-        static public int NumOfLED = 320;
+        static public int NumOfLED = 450;
         static private int NumOf_H_Line = 4;
         static private int NumOf_H_Leds = 8;
         static private int NumOf_V_Line = 4;
         static private int NumOf_V_Leds = 8;
         static private int NumOfLED_Pannel = 42;
-        static private int NumOfLED_Drawer = 450 - NumOfLED_Pannel;
+        static private int NumOfLED_Drawer = 320;
 
         private static List<int[]> List_H_Line_Leds = new List<int[]>();
         private static List<int[]> List_V_Line_Leds = new List<int[]>();
@@ -93,8 +93,12 @@ namespace YCHPanellib
                 LEDBytes[i * 3 + 2] = color.B;
             }
         }
-        static public void Set_Drawer_Box_Leds(this byte[] LEDBytes, int x, int y, int width, int height, Color color)
+        static public void Set_Drawer_Box_Leds(this byte[] LEDBytes, int X, int Y, int Width, int Height, Color color)
         {
+            int x = Y;
+            int y = X;
+            int width = Height;
+            int height = Width;
             for (int i = x; i < (x + width); i++)
             {
                 LEDBytes.Set_Drawer_H_Leds(i + y * NumOf_H_Line, color);
@@ -109,7 +113,19 @@ namespace YCHPanellib
                 LEDBytes.Set_Drawer_V_Leds(i + (x + width) * NumOf_V_Line, color);
             }
         }
+        static public void Set_Drawer_Panel_Leds(this byte[] LEDBytes, Color color)
+        {
+   
+            int offset = NumOfLED_Drawer;
 
+            int start_led = offset;
+            for (int i = start_led; i < NumOfLED; i++)
+            {
+                LEDBytes[i * 3 + 0] = color.R;
+                LEDBytes[i * 3 + 1] = color.G;
+                LEDBytes[i * 3 + 2] = color.B;
+            }
+        }
         static public byte[] Get_Empty_LEDBytes()
         {
             return new byte[NumOfLED * 3];
@@ -143,6 +159,50 @@ namespace YCHPanellib
                 return Communication.Get_WS2812_Buffer(uDP_Class, IP, NumOfLED * 3);
             }
             return LED_Bytes;
+        }
+    }
+    static public class RowLED
+    {
+        static int LocalPort = 29001;
+        static int ServerPort = 30001;
+        static private UDP_Class uDP_Class = new UDP_Class("0.0.0.0", LocalPort);
+        static public int NumOfLED = 100;
+
+        static public byte[] Get_Rows_LEDBytes(this byte[] LED_Bytes, int startNum, int EndNum, Color color)
+        {
+            for (int i = startNum; i < EndNum; i++)
+            {
+                if (i > LED_Bytes.Length) break;
+                LED_Bytes[i * 3 + 0] = color.R;
+                LED_Bytes[i * 3 + 1] = color.G;
+                LED_Bytes[i * 3 + 2] = color.B;
+            }
+            return LED_Bytes;
+        }
+        static public byte[] Get_Empty_LEDBytes()
+        {
+            return new byte[NumOfLED * 3];
+        }
+        static public bool Set_Clear_UDP(string IP)
+        {
+            if (uDP_Class != null)
+            {
+                return Communication.Set_WS2812_Buffer(uDP_Class, IP, 0, Get_Empty_LEDBytes());
+            }
+            return false;
+        }
+
+        static public bool Set_RowLEDBytes_UDP(this byte[] LED_Bytes, string IP)
+        {
+            return Set_RowLEDBytes_UDP(IP, LED_Bytes);
+        }
+        static public bool Set_RowLEDBytes_UDP(string IP, byte[] LED_Bytes)
+        {
+            if (uDP_Class != null)
+            {
+                return Communication.Set_WS2812_Buffer(uDP_Class, IP, 0, LED_Bytes);
+            }
+            return false;
         }
     }
 }

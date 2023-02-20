@@ -30,12 +30,12 @@
         {
             this.textBox_IPA = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox_IPB = new System.Windows.Forms.TextBox();
+            this.textBox_IPD = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox_IPC = new System.Windows.Forms.TextBox();
-            this.textBox_IPD = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox_IPB = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.button_ConnectTest = new System.Windows.Forms.Button();
             this.numericUpDown_V_Line_index = new System.Windows.Forms.NumericUpDown();
             this.button_V_Line_Show = new System.Windows.Forms.Button();
@@ -45,35 +45,47 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button_Drawer_ShowBox = new System.Windows.Forms.Button();
+            this.numericUpDown_Drawer_Height = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_Drawer_Width = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.numericUpDown_Drawer_PointY = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDown_Drawer_PointX = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.numericUpDown_Drawer_PointY = new System.Windows.Forms.NumericUpDown();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.numericUpDown_Drawer_Width = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown_Drawer_Height = new System.Windows.Forms.NumericUpDown();
-            this.button_Drawer_ShowBox = new System.Windows.Forms.Button();
             this.radioButton_Drawer_紅 = new System.Windows.Forms.RadioButton();
             this.radioButton_Drawer_藍 = new System.Windows.Forms.RadioButton();
             this.radioButton_Drawer_綠 = new System.Windows.Forms.RadioButton();
             this.radioButton_Drawer_黃 = new System.Windows.Forms.RadioButton();
             this.radioButton_Drawer_白 = new System.Windows.Forms.RadioButton();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button_Drawer_ShowPanel = new System.Windows.Forms.Button();
+            this.numericUpDown_RowLED_EndNum = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_RowLED_StartNum = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.button_RowLED_ShowLED = new System.Windows.Forms.Button();
+            this.button_RowLED_Clear = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_V_Line_index)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_H_Line_index)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_PointX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_PointY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_Width)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_Height)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_Width)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_PointY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_PointX)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RowLED_EndNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RowLED_StartNum)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox_IPA
@@ -98,14 +110,30 @@
             this.panel1.Size = new System.Drawing.Size(289, 35);
             this.panel1.TabIndex = 1;
             // 
-            // label1
+            // textBox_IPD
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(8, 12);
-            this.label1.TabIndex = 2;
-            this.label1.Text = ".";
+            this.textBox_IPD.Location = new System.Drawing.Point(225, 6);
+            this.textBox_IPD.Name = "textBox_IPD";
+            this.textBox_IPD.Size = new System.Drawing.Size(54, 22);
+            this.textBox_IPD.TabIndex = 7;
+            this.textBox_IPD.Text = "220";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(211, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(8, 12);
+            this.label3.TabIndex = 6;
+            this.label3.Text = ".";
+            // 
+            // textBox_IPC
+            // 
+            this.textBox_IPC.Location = new System.Drawing.Point(151, 6);
+            this.textBox_IPC.Name = "textBox_IPC";
+            this.textBox_IPC.Size = new System.Drawing.Size(54, 22);
+            this.textBox_IPC.TabIndex = 5;
+            this.textBox_IPC.Text = "100";
             // 
             // label2
             // 
@@ -124,30 +152,14 @@
             this.textBox_IPB.TabIndex = 3;
             this.textBox_IPB.Text = "168";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(211, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(8, 12);
-            this.label3.TabIndex = 6;
-            this.label3.Text = ".";
-            // 
-            // textBox_IPC
-            // 
-            this.textBox_IPC.Location = new System.Drawing.Point(151, 6);
-            this.textBox_IPC.Name = "textBox_IPC";
-            this.textBox_IPC.Size = new System.Drawing.Size(54, 22);
-            this.textBox_IPC.TabIndex = 5;
-            this.textBox_IPC.Text = "43";
-            // 
-            // textBox_IPD
-            // 
-            this.textBox_IPD.Location = new System.Drawing.Point(225, 6);
-            this.textBox_IPD.Name = "textBox_IPD";
-            this.textBox_IPD.Size = new System.Drawing.Size(54, 22);
-            this.textBox_IPD.TabIndex = 7;
-            this.textBox_IPD.Text = "180";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(63, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(8, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = ".";
             // 
             // button_ConnectTest
             // 
@@ -183,9 +195,10 @@
             // 
             // button_V_Line_Show
             // 
+            this.button_V_Line_Show.Font = new System.Drawing.Font("微軟正黑體", 12F);
             this.button_V_Line_Show.Location = new System.Drawing.Point(214, 7);
             this.button_V_Line_Show.Name = "button_V_Line_Show";
-            this.button_V_Line_Show.Size = new System.Drawing.Size(98, 35);
+            this.button_V_Line_Show.Size = new System.Drawing.Size(110, 35);
             this.button_V_Line_Show.TabIndex = 5;
             this.button_V_Line_Show.Text = "Show";
             this.button_V_Line_Show.UseVisualStyleBackColor = true;
@@ -215,9 +228,10 @@
             // 
             // button_H_Line_Show
             // 
+            this.button_H_Line_Show.Font = new System.Drawing.Font("微軟正黑體", 12F);
             this.button_H_Line_Show.Location = new System.Drawing.Point(214, 46);
             this.button_H_Line_Show.Name = "button_H_Line_Show";
-            this.button_H_Line_Show.Size = new System.Drawing.Size(98, 35);
+            this.button_H_Line_Show.Size = new System.Drawing.Size(110, 35);
             this.button_H_Line_Show.TabIndex = 7;
             this.button_H_Line_Show.Text = "Show";
             this.button_H_Line_Show.UseVisualStyleBackColor = true;
@@ -267,9 +281,30 @@
             this.panel2.Size = new System.Drawing.Size(532, 839);
             this.panel2.TabIndex = 11;
             // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::YCHPanel.Properties.Resources.H;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 91);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(530, 373);
+            this.panel5.TabIndex = 12;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::YCHPanel.Properties.Resources.V;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 464);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(530, 373);
+            this.panel4.TabIndex = 11;
+            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.button_Drawer_ShowPanel);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.button_Drawer_ShowBox);
             this.panel3.Controls.Add(this.numericUpDown_Drawer_Height);
@@ -284,117 +319,28 @@
             this.panel3.Controls.Add(this.numericUpDown_Drawer_PointX);
             this.panel3.Location = new System.Drawing.Point(550, 83);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(691, 564);
+            this.panel3.Size = new System.Drawing.Size(572, 549);
             this.panel3.TabIndex = 11;
             // 
-            // label6
+            // panel6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label6.Location = new System.Drawing.Point(9, 17);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 20);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "座標     : ";
+            this.panel6.BackgroundImage = global::YCHPanel.Properties.Resources.座標;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 138);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(570, 409);
+            this.panel6.TabIndex = 21;
             // 
-            // numericUpDown_Drawer_PointX
+            // button_Drawer_ShowBox
             // 
-            this.numericUpDown_Drawer_PointX.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.numericUpDown_Drawer_PointX.Location = new System.Drawing.Point(113, 15);
-            this.numericUpDown_Drawer_PointX.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.numericUpDown_Drawer_PointX.Name = "numericUpDown_Drawer_PointX";
-            this.numericUpDown_Drawer_PointX.Size = new System.Drawing.Size(57, 29);
-            this.numericUpDown_Drawer_PointX.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label7.Location = new System.Drawing.Point(93, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(14, 20);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "(";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label8.Location = new System.Drawing.Point(181, 17);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 20);
-            this.label8.TabIndex = 13;
-            this.label8.Text = ",";
-            // 
-            // numericUpDown_Drawer_PointY
-            // 
-            this.numericUpDown_Drawer_PointY.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.numericUpDown_Drawer_PointY.Location = new System.Drawing.Point(200, 15);
-            this.numericUpDown_Drawer_PointY.Maximum = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            this.numericUpDown_Drawer_PointY.Name = "numericUpDown_Drawer_PointY";
-            this.numericUpDown_Drawer_PointY.Size = new System.Drawing.Size(57, 29);
-            this.numericUpDown_Drawer_PointY.TabIndex = 14;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label9.Location = new System.Drawing.Point(265, 17);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(14, 20);
-            this.label9.TabIndex = 15;
-            this.label9.Text = ")";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label10.Location = new System.Drawing.Point(9, 60);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(71, 20);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Width  : ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label11.Location = new System.Drawing.Point(9, 95);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 20);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Height : ";
-            // 
-            // numericUpDown_Drawer_Width
-            // 
-            this.numericUpDown_Drawer_Width.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.numericUpDown_Drawer_Width.Location = new System.Drawing.Point(97, 56);
-            this.numericUpDown_Drawer_Width.Maximum = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numericUpDown_Drawer_Width.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown_Drawer_Width.Name = "numericUpDown_Drawer_Width";
-            this.numericUpDown_Drawer_Width.Size = new System.Drawing.Size(57, 29);
-            this.numericUpDown_Drawer_Width.TabIndex = 18;
-            this.numericUpDown_Drawer_Width.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.button_Drawer_ShowBox.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.button_Drawer_ShowBox.Location = new System.Drawing.Point(185, 56);
+            this.button_Drawer_ShowBox.Name = "button_Drawer_ShowBox";
+            this.button_Drawer_ShowBox.Size = new System.Drawing.Size(149, 64);
+            this.button_Drawer_ShowBox.TabIndex = 20;
+            this.button_Drawer_ShowBox.Text = "Show Box";
+            this.button_Drawer_ShowBox.UseVisualStyleBackColor = true;
             // 
             // numericUpDown_Drawer_Height
             // 
@@ -419,14 +365,114 @@
             0,
             0});
             // 
-            // button_Drawer_ShowBox
+            // numericUpDown_Drawer_Width
             // 
-            this.button_Drawer_ShowBox.Location = new System.Drawing.Point(185, 85);
-            this.button_Drawer_ShowBox.Name = "button_Drawer_ShowBox";
-            this.button_Drawer_ShowBox.Size = new System.Drawing.Size(98, 35);
-            this.button_Drawer_ShowBox.TabIndex = 20;
-            this.button_Drawer_ShowBox.Text = "Show Box";
-            this.button_Drawer_ShowBox.UseVisualStyleBackColor = true;
+            this.numericUpDown_Drawer_Width.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.numericUpDown_Drawer_Width.Location = new System.Drawing.Point(97, 56);
+            this.numericUpDown_Drawer_Width.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericUpDown_Drawer_Width.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_Drawer_Width.Name = "numericUpDown_Drawer_Width";
+            this.numericUpDown_Drawer_Width.Size = new System.Drawing.Size(57, 29);
+            this.numericUpDown_Drawer_Width.TabIndex = 18;
+            this.numericUpDown_Drawer_Width.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label11.Location = new System.Drawing.Point(9, 95);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 20);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "Height : ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label10.Location = new System.Drawing.Point(9, 60);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(71, 20);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Width  : ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label9.Location = new System.Drawing.Point(265, 17);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(14, 20);
+            this.label9.TabIndex = 15;
+            this.label9.Text = ")";
+            // 
+            // numericUpDown_Drawer_PointY
+            // 
+            this.numericUpDown_Drawer_PointY.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.numericUpDown_Drawer_PointY.Location = new System.Drawing.Point(200, 15);
+            this.numericUpDown_Drawer_PointY.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.numericUpDown_Drawer_PointY.Name = "numericUpDown_Drawer_PointY";
+            this.numericUpDown_Drawer_PointY.Size = new System.Drawing.Size(57, 29);
+            this.numericUpDown_Drawer_PointY.TabIndex = 14;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label8.Location = new System.Drawing.Point(181, 17);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(13, 20);
+            this.label8.TabIndex = 13;
+            this.label8.Text = ",";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label7.Location = new System.Drawing.Point(93, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(14, 20);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "(";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label6.Location = new System.Drawing.Point(9, 17);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 20);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "座標     : ";
+            // 
+            // numericUpDown_Drawer_PointX
+            // 
+            this.numericUpDown_Drawer_PointX.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.numericUpDown_Drawer_PointX.Location = new System.Drawing.Point(113, 15);
+            this.numericUpDown_Drawer_PointX.Maximum = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.numericUpDown_Drawer_PointX.Name = "numericUpDown_Drawer_PointX";
+            this.numericUpDown_Drawer_PointX.Size = new System.Drawing.Size(57, 29);
+            this.numericUpDown_Drawer_PointX.TabIndex = 10;
             // 
             // radioButton_Drawer_紅
             // 
@@ -445,7 +491,7 @@
             // 
             this.radioButton_Drawer_藍.AutoSize = true;
             this.radioButton_Drawer_藍.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.radioButton_Drawer_藍.Location = new System.Drawing.Point(51, 53);
+            this.radioButton_Drawer_藍.Location = new System.Drawing.Point(58, 53);
             this.radioButton_Drawer_藍.Name = "radioButton_Drawer_藍";
             this.radioButton_Drawer_藍.Size = new System.Drawing.Size(43, 24);
             this.radioButton_Drawer_藍.TabIndex = 13;
@@ -456,7 +502,7 @@
             // 
             this.radioButton_Drawer_綠.AutoSize = true;
             this.radioButton_Drawer_綠.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.radioButton_Drawer_綠.Location = new System.Drawing.Point(100, 53);
+            this.radioButton_Drawer_綠.Location = new System.Drawing.Point(104, 53);
             this.radioButton_Drawer_綠.Name = "radioButton_Drawer_綠";
             this.radioButton_Drawer_綠.Size = new System.Drawing.Size(43, 24);
             this.radioButton_Drawer_綠.TabIndex = 14;
@@ -467,7 +513,7 @@
             // 
             this.radioButton_Drawer_黃.AutoSize = true;
             this.radioButton_Drawer_黃.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.radioButton_Drawer_黃.Location = new System.Drawing.Point(149, 53);
+            this.radioButton_Drawer_黃.Location = new System.Drawing.Point(150, 53);
             this.radioButton_Drawer_黃.Name = "radioButton_Drawer_黃";
             this.radioButton_Drawer_黃.Size = new System.Drawing.Size(43, 24);
             this.radioButton_Drawer_黃.TabIndex = 15;
@@ -478,48 +524,132 @@
             // 
             this.radioButton_Drawer_白.AutoSize = true;
             this.radioButton_Drawer_白.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.radioButton_Drawer_白.Location = new System.Drawing.Point(198, 53);
+            this.radioButton_Drawer_白.Location = new System.Drawing.Point(196, 53);
             this.radioButton_Drawer_白.Name = "radioButton_Drawer_白";
             this.radioButton_Drawer_白.Size = new System.Drawing.Size(43, 24);
             this.radioButton_Drawer_白.TabIndex = 16;
             this.radioButton_Drawer_白.Text = "白";
             this.radioButton_Drawer_白.UseVisualStyleBackColor = true;
             // 
-            // panel5
+            // panel7
             // 
-            this.panel5.BackgroundImage = global::YCHPanel.Properties.Resources.H;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 91);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(530, 373);
-            this.panel5.TabIndex = 12;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label17);
+            this.panel7.Controls.Add(this.button_RowLED_Clear);
+            this.panel7.Controls.Add(this.button_RowLED_ShowLED);
+            this.panel7.Controls.Add(this.numericUpDown_RowLED_EndNum);
+            this.panel7.Controls.Add(this.numericUpDown_RowLED_StartNum);
+            this.panel7.Controls.Add(this.label12);
+            this.panel7.Controls.Add(this.label13);
+            this.panel7.Location = new System.Drawing.Point(551, 638);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(570, 283);
+            this.panel7.TabIndex = 17;
             // 
-            // panel4
+            // button_Drawer_ShowPanel
             // 
-            this.panel4.BackgroundImage = global::YCHPanel.Properties.Resources.V;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 464);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(530, 373);
-            this.panel4.TabIndex = 11;
+            this.button_Drawer_ShowPanel.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.button_Drawer_ShowPanel.Location = new System.Drawing.Point(349, 56);
+            this.button_Drawer_ShowPanel.Name = "button_Drawer_ShowPanel";
+            this.button_Drawer_ShowPanel.Size = new System.Drawing.Size(149, 64);
+            this.button_Drawer_ShowPanel.TabIndex = 22;
+            this.button_Drawer_ShowPanel.Text = "Show Panel";
+            this.button_Drawer_ShowPanel.UseVisualStyleBackColor = true;
             // 
-            // panel6
+            // numericUpDown_RowLED_EndNum
             // 
-            this.panel6.BackgroundImage = global::YCHPanel.Properties.Resources.座標;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 153);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(689, 409);
-            this.panel6.TabIndex = 21;
+            this.numericUpDown_RowLED_EndNum.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.numericUpDown_RowLED_EndNum.Location = new System.Drawing.Point(111, 91);
+            this.numericUpDown_RowLED_EndNum.Maximum = new decimal(new int[] {
+            150,
+            0,
+            0,
+            0});
+            this.numericUpDown_RowLED_EndNum.Name = "numericUpDown_RowLED_EndNum";
+            this.numericUpDown_RowLED_EndNum.Size = new System.Drawing.Size(57, 29);
+            this.numericUpDown_RowLED_EndNum.TabIndex = 23;
+            this.numericUpDown_RowLED_EndNum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDown_RowLED_StartNum
+            // 
+            this.numericUpDown_RowLED_StartNum.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.numericUpDown_RowLED_StartNum.Location = new System.Drawing.Point(112, 56);
+            this.numericUpDown_RowLED_StartNum.Maximum = new decimal(new int[] {
+            150,
+            0,
+            0,
+            0});
+            this.numericUpDown_RowLED_StartNum.Name = "numericUpDown_RowLED_StartNum";
+            this.numericUpDown_RowLED_StartNum.Size = new System.Drawing.Size(57, 29);
+            this.numericUpDown_RowLED_StartNum.TabIndex = 22;
+            this.numericUpDown_RowLED_StartNum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label12.Location = new System.Drawing.Point(9, 95);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(96, 20);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "End Num  : ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label13.Location = new System.Drawing.Point(9, 60);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(103, 20);
+            this.label13.TabIndex = 20;
+            this.label13.Text = "Start Num  : ";
+            // 
+            // button_RowLED_ShowLED
+            // 
+            this.button_RowLED_ShowLED.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.button_RowLED_ShowLED.Location = new System.Drawing.Point(184, 56);
+            this.button_RowLED_ShowLED.Name = "button_RowLED_ShowLED";
+            this.button_RowLED_ShowLED.Size = new System.Drawing.Size(149, 64);
+            this.button_RowLED_ShowLED.TabIndex = 24;
+            this.button_RowLED_ShowLED.Text = "Show LED";
+            this.button_RowLED_ShowLED.UseVisualStyleBackColor = true;
+            // 
+            // button_RowLED_Clear
+            // 
+            this.button_RowLED_Clear.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.button_RowLED_Clear.Location = new System.Drawing.Point(184, 126);
+            this.button_RowLED_Clear.Name = "button_RowLED_Clear";
+            this.button_RowLED_Clear.Size = new System.Drawing.Size(149, 64);
+            this.button_RowLED_Clear.TabIndex = 25;
+            this.button_RowLED_Clear.Text = "Clear";
+            this.button_RowLED_Clear.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label17.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label17.Location = new System.Drawing.Point(0, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(568, 38);
+            this.label17.TabIndex = 27;
+            this.label17.Text = "RowLED";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1253, 956);
+            this.ClientSize = new System.Drawing.Size(1133, 935);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.radioButton_Drawer_白);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.radioButton_Drawer_黃);
@@ -543,10 +673,14 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_PointX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_PointY)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_Width)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_Height)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_Width)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_PointY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Drawer_PointX)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RowLED_EndNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RowLED_StartNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -591,6 +725,15 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button_Drawer_ShowPanel;
+        private System.Windows.Forms.Button button_RowLED_ShowLED;
+        private System.Windows.Forms.NumericUpDown numericUpDown_RowLED_EndNum;
+        private System.Windows.Forms.NumericUpDown numericUpDown_RowLED_StartNum;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button_RowLED_Clear;
+        private System.Windows.Forms.Label label17;
     }
 }
 

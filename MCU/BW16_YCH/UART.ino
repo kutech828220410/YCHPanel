@@ -141,6 +141,12 @@ void serialEvent()
         wiFiConfig.Set_SSID(str);
         Get_Checksum();
       }
+      else if (UART0_RX[1] == 'v')
+      {
+        String str = Version;
+        mySerial.print(str);
+        mySerial.flush();
+      }
       else if (UART0_RX[1] == 'A')
       {
         flag_writeMode = true;
