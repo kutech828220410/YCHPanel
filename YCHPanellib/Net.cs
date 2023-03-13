@@ -204,5 +204,14 @@ namespace YCHPanellib
             }
             return false;
         }
+        static public byte[] Get_LEDBytes_UDP(string IP)
+        {
+            byte[] LED_Bytes = new byte[NumOfLED * 3];
+            if (uDP_Class != null)
+            {
+                return Communication.Get_WS2812_Buffer(uDP_Class, IP, NumOfLED * 3);
+            }
+            return LED_Bytes;
+        }
     }
 }
